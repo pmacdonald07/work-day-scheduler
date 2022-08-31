@@ -18,11 +18,8 @@ $("#fourPM").text(moment().hours(16).format("hA"));
 
 $("#fivePM").text(moment().hours(17).format("hA"));
 
-taskArray = [];
-
-bodyEl = $("body");
-
-let formArray = [$("#rowNine"), $("#rowTen"), $("#rowEleven"), $("#rowTwelve"), $("#rowOne"), $("#rowTwo"), $("#rowThree"), $("rowFour"), $("#rowFive")]
+let taskArray = [];
+console.log(taskArray);
 
 function auditTime() {
     $("div.form-group").each(function(){
@@ -64,6 +61,7 @@ function taskSubmit (event) {
     var inputVal = $(this).find("input").val();
     console.log(inputVal);
     console.log(event.target);
+    console.log(taskArray);
     
     var task = {
         timeID: $(this).find("label").attr("id"),
@@ -90,7 +88,7 @@ function loadTasks () {
         taskArray = [];
     }
 
-    // for ever task saved in localStorage, this function loops through every label element
+    // for every task saved in localStorage, this function loops through every label element
     // if its id matches the saved id in a task, this text of the input changes to the saved task info
     for (i = 0; i < tasksLocal.length; i++) {
         $("label").each(function() {
