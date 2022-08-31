@@ -19,11 +19,9 @@ $("#fourPM").text(moment().hours(16).format("hA"));
 $("#fivePM").text(moment().hours(17).format("hA"));
 
 let taskArray = [];
-console.log(taskArray);
 
 function auditTime() {
     $("div.form-group").each(function(){
-    //debugger;
         var timeTest = $(this).children(".timeRow").text();
         var inputClass = $(this).children(".timeSlot");
         var inputForm = $(this).find("input");
@@ -59,18 +57,13 @@ function auditTime() {
 function taskSubmit (event) {
     event.preventDefault();
     var inputVal = $(this).find("input").val();
-    console.log(inputVal);
-    console.log(event.target);
-    console.log(taskArray);
     
     var task = {
         timeID: $(this).find("label").attr("id"),
         taskInfo: inputVal
     };
 
-    console.log(task);
     taskArray.push(task);
-    console.log(taskArray);
 
     saveTasks();
 }

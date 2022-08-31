@@ -11,5 +11,7 @@ To complete this task I did the following:
 By completing this project I learned a great deal about utilizing third party APIs. This was my first time using Bootstrap, jQuery, and Moment.js. While it took me a lot of time and effort to figure out how to use these libraries, it is clear that as I master these tools I will save an incredible amount of time when coding. I look forward to learning more about what is possible with these tools.
 
 Screenshot of this project:
+    ![work-schedule-screenshot](https://user-images.githubusercontent.com/108894754/187703324-c1c50661-fb5b-4774-a9bf-a7e2ee80e6a2.png)
 
 Link to the project's live webpage:
+    https://pmacdonald07.github.io/work-day-scheduler/
