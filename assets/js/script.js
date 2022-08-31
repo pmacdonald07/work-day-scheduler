@@ -90,6 +90,8 @@ function loadTasks () {
         taskArray = [];
     }
 
+    // for ever task saved in localStorage, this function loops through every label element
+    // if its id matches the saved id in a task, this text of the input changes to the saved task info
     for (i = 0; i < tasksLocal.length; i++) {
         $("label").each(function() {
             if (tasksLocal[i].timeID === $(this).attr("id")) {
